@@ -147,3 +147,9 @@ header img.logo {
   vertical-align: middle;
   margin-left: 10px;
 }
+
+header img {
+  height: 80px;          /* Adjust to fit your design */
+  width: auto;           /* Keeps the correct proportions */
+  vertical-align: middle;
+}
