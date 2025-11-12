@@ -69,6 +69,16 @@ nav, p, section, article {
   width: 125px;
 }
 
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  width: 250px;
+}
+
 .socialmedia img {
   width: 30px;  /* adjust to smaller size */
   height: 30px;
