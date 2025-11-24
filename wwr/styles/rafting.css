@@ -13,14 +13,23 @@
   box-sizing: border-box;
 }
 
+body {
+    font-family: var(--body-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
 header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 20px;
     background-color: var(--primary-color);
-     color: blueviolet;
+    color: white;
 }
+
 
 nav ul {
     list-style: none;
@@ -136,3 +145,5 @@ footer {
     width: 30px;
     height: 30px;
 }
+
+
