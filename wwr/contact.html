@@ -54,26 +54,29 @@
             <!-- Contact Form -->
             <form class="contact-form">
 
-                <label>Name:
-                    <input type="text" name="name" placeholder="Your Name">
-                </label>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
 
-                <label>Email:
-                    <input type="email" name="email" placeholder="Your Email">
-                </label>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
 
                 <p>Message Purpose:</p>
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general"> General Inquiry
+                </label><br>
+                <label for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
+                </label><br>
+                <label for="suggestion">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion
+                </label><br><br>
 
-                <label><input type="radio" name="purpose" value="general"> General Inquiry</label><br>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message..."></textarea>
 
-                <label>Message:
-                    <textarea name="message" placeholder="Type your message..."></textarea>
-                </label>
-
-                <label>
-                    <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly
+                    newsletter
                 </label>
 
                 <button type="submit">Get in Touch!</button>
