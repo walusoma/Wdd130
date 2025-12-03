@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description"
         content="Contact White Water Rafting Adventures with questions, reservations, or suggestions. Reach us by phone, email, or through our online contact form.">
     <meta name="author" content="Walusoma Martin">
     <title>Contact Us | White Water Rafting Adventures</title>
-
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -22,7 +20,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -42,41 +40,44 @@
 
         <!-- Map + Contact Form -->
         <section class="contact-layout">
-
-            <!-- Google Map Placeholder -->
+            <h2>Contact Us</h2>
+            <!-- Google Map -->
             <div class="map-box">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537363159046!3d-37.81720997975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577e96da1c6f0e!2s123%20Main%20St!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
-                    allowfullscreen="" loading="lazy">
-                </iframe>
+                    allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <!-- Contact Form -->
             <form class="contact-form">
-
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                <p>Message Purpose:</p>
-                <label for="general">
-                    <input type="radio" id="general" name="purpose" value="general"> General Inquiry
-                </label><br>
-                <label for="reservation">
-                    <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
-                </label><br>
-                <label for="suggestion">
-                    <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion
-                </label><br><br>
+                <fieldset>
+                    <legend>Message Purpose:</legend>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        General Inquiry
+                    </label><br>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label><br>
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Type your message..."></textarea>
+                <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
 
                 <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly
-                    newsletter
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Please subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit">Get in Touch!</button>
@@ -86,26 +87,24 @@
 
         <!-- Employee Section -->
         <section class="employee-section">
-            <h2>We Are Here to Serve You</h2>
-
+            <h2>Contact Us — We Are Here to Serve You</h2>
             <div class="employees">
                 <figure>
                     <img src="images/employee1.jpeg" alt="Employee 1">
-                    <figcaption>Employee Profile</figcaption>
+                    <figcaption>Jane Doe — Senior Rafting Guide</figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee2.jpeg" alt="Employee 2">
-                    <figcaption>Employee Profile</figcaption>
+                    <figcaption>John Smith — Trip Coordinator</figcaption>
                 </figure>
 
                 <figure>
                     <img src="images/employee3.jpeg" alt="Employee 3">
-                    <figcaption>Employee Profile</figcaption>
+                    <figcaption>Mary Johnson — Safety Officer</figcaption>
                 </figure>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
@@ -113,7 +112,7 @@
         <p>© 2025 White Water Rafting Adventures | Walusoma Martin</p>
         <nav class="socialmedia">
             <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
-            <a href="https://tictok-bw.com"><img src="images/tictok-bw.svg" alt="TikTok Icon"></a>
+            <a href="https://tiktok.pw"><img src="images/tictok-bw.svg" alt="TikTok Icon"></a>
             <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram Icon"></a>
         </nav>
     </footer>
